@@ -8,83 +8,72 @@
 <body>
 
 <!-- Navigation -->
-  <div class=" w-full bg-teal-500">
-    <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl p-5 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
-        <div class="flex flex-row items-center justify-between lg:justify-start">
-            <a href="./index.html" class="font-Sacramento text-2xl font-bold tracking-tighter text-rose-400 transition duration-500 ease-in-out transform tracking-relaxed lg:pr-8"> Rachel Dooley </a>
-            <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
-                <svg fill="currentColor" viewBox="0 0 20 20" class="w-8 h-8">
-                    <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
-                    <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" style="display: none"></path>
-                </svg>
-            </button>
-        </div>
-        <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow hidden md:flex md:justify-end md:flex-row">
-            <ul class="space-y-2 list-none lg:space-y-0 lg:items-center lg:inline-flex">
-                <li>
-                    <a href="#" class="px-2 lg:px-6 py-6 text-sm border-b-2 border-transparent hover:border-blue-600 leading-[22px] md:px-3 text-gray-500 hover:text-blue-500"> All <span class="hidden lg:inline"> templates </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="px-2 lg:px-6 py-6 text-sm border-b-2 border-transparent hover:border-blue-600 leading-[22px] md:px-3 text-gray-500 hover:text-blue-500"> FAQ </a>
-                </li>
-                <li>
-                    <a href="https://www.wickedtemplates.com/" class="px-2 lg:px-6 py-6 text-sm border-b-2 border-transparent hover:border-blue-600 leading-[22px] md:px-3 text-gray-500 hover:text-blue-500"> Free <span class="hidden lg:inline">Templates </span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-</div>
+ 
+<nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
+  <div class="container flex flex-wrap justify-between items-center mx-auto">
+    <span class="self-center text-xl font-Sacramento whitespace-nowrap dark:text-slate-100">Rachel Dooley</span>
+  <button data-collapse-toggle="mobile-menu" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu" aria-expanded="false">
+    <span class="sr-only">Open main menu</span>
+    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+    <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+  </button>
+  <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
+    <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+      <li>
+        <a href="#" class="block py-2 pr-4 pl-3 text-slate-100 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-teal-500 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">about</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 pr-4 pl-3 text-slate-100 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-teal-500 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">projects</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 pr-4 pl-3 text-slate-100 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-teal-500 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">contact</a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</nav>
+
 
 <!-- Hero Area -->
 
 <section class="h-screen">
-  <div class="px-4 py-12 mx-auto  sm:px-6 md:px-12 lg:px-24 lg:py-24 bg-teal-500 h-full">
+  <div class="px-4 py-12 mx-auto  sm:px-6 md:px-12 lg:px-24 lg:py-24 bg-gray-900 h-full">
     <div class="flex flex-col w-full mb-12 text-center h-full">
       <div class="inline-flex items-center justify-center flex-shrink-0 w-20 h-20 mx-auto mb-5 text-rose-400 rounded-full ">
       </div>
-      <h1 class="max-w-5xl text-4xl font-bold leading-none text-gray-800 md:text-5xl lg:text-6xl lg:max-w-7xl">
+      <h1 class="max-w-5xl text-4xl text-left pl-2 text-slate-100 md:text-5xl lg:text-6xl lg:max-w-7xl">
         Hi, I'm Rachel ✨ <br class="hidden lg:block">
-        <h1 class="text-4xl font-bold text-gray-800 md:text-5xl lg:text-6xl lg:max-w-7xl py-3 ">Front-End Web Developer</h1>
+        <h1 class="text-4xl text-white text-left pl-2 md:text-5xl lg:text-6xl lg:max-w-7xl py-3 ">Front-End <span class="underline">Web Developer</span></h1>
       </h1>
-      <div class="flex flex-col items-center pb-10 mx-auto my-5  max-w-7xl sm:flex-row">
-        <div class="inline-flex items-center justify-center flex-shrink-0 w-20 h-20 text-gray-800 rounded-full sm:mr-10">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd" d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z" clip-rule="evenodd" />
-            </svg>
+      <div class="container max-w-screen-lg mx-auto">
+        <div>
+          <div class="max-w-3xl text-left pl-2 gap-4 py-5">
+            <a href="https://www.twitter.com"><button class="bg-gray-900 p-2 font-semibold text-teal-500 hover:text-rose-500  items-center space-x-2 rounded">
+              <svg class="w-8 h-8 fill-current" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" /></svg>
+            </button></a>
+        
+            <a href="https://www.linkedin.com">  <button class="bg-gray-900 p-2 font-semibold text-teal-500 hover:text-rose-500  items-center space-x-2 rounded">
+              <svg class="w-8 h-8 fill-current" role="img" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                <g><path d="M218.123122,218.127392 L180.191928,218.127392 L180.191928,158.724263 C180.191928,144.559023 179.939053,126.323993 160.463756,126.323993 C140.707926,126.323993 137.685284,141.757585 137.685284,157.692986 L137.685284,218.123441 L99.7540894,218.123441 L99.7540894,95.9665207 L136.168036,95.9665207 L136.168036,112.660562 L136.677736,112.660562 C144.102746,99.9650027 157.908637,92.3824528 172.605689,92.9280076 C211.050535,92.9280076 218.138927,118.216023 218.138927,151.114151 L218.123122,218.127392 Z M56.9550587,79.2685282 C44.7981969,79.2707099 34.9413443,69.4171797 34.9391618,57.260052 C34.93698,45.1029244 44.7902948,35.2458562 56.9471566,35.2436736 C69.1040185,35.2414916 78.9608713,45.0950217 78.963054,57.2521493 C78.9641017,63.090208 76.6459976,68.6895714 72.5186979,72.8184433 C68.3913982,76.9473153 62.7929898,79.26748 56.9550587,79.2685282 M75.9206558,218.127392 L37.94995,218.127392 L37.94995,95.9665207 L75.9206558,95.9665207 L75.9206558,218.127392 Z M237.033403,0.0182577091 L18.8895249,0.0182577091 C8.57959469,-0.0980923971 0.124827038,8.16056231 -0.001,18.4706066 L-0.001,237.524091 C0.120519052,247.839103 8.57460631,256.105934 18.8895249,255.9977 L237.033403,255.9977 C247.368728,256.125818 255.855922,247.859464 255.999,237.524091 L255.999,18.4548016 C255.851624,8.12438979 247.363742,-0.133792868 237.033403,0.000790807055"></path></g>
+              </svg>
+            </button></a>
+        
+            <a href="https://www.github.com"><button class="bg-gray-900 p-2 font-semibold text-teal-500 text-3xl hover:text-rose-500  items-center space-x-2 rounded">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="w-8 h-8" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                <g fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385c.6.105.825-.255.825-.57c0-.285-.015-1.23-.015-2.235c-3.015.555-3.795-.735-4.035-1.41c-.135-.345-.72-1.41-1.23-1.695c-.42-.225-1.02-.78-.015-.795c.945-.015 1.62.87 1.845 1.23c1.08 1.815 2.805 1.305 3.495.99c.105-.78.42-1.305.765-1.605c-2.67-.3-5.46-1.335-5.46-5.925c0-1.305.465-2.385 1.23-3.225c-.12-.3-.54-1.53.12-3.18c0 0 1.005-.315 3.3 1.23c.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23c.66 1.65.24 2.88.12 3.18c.765.84 1.23 1.905 1.23 3.225c0 4.605-2.805 5.625-5.475 5.925c.435.375.81 1.095.81 2.22c0 1.605-.015 2.895-.015 3.3c0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" fill="currentColor" /></g>
+              </svg>
+            </button></a>
+          </div>
         </div>
-        <div class="flex-grow prose text-center sm:text-left sm:mt-0 prose-md text-gray-800">
-            <h2>I'm a creative who is endlessly curious</h2>
-        </div>
-    </div>
-    <div class="flex flex-col items-center pb-10 mx-auto  max-w-7xl sm:flex-row">
-        <div class="inline-flex items-center justify-center flex-shrink-0 w-20 h-20 text-gray-800rounded-full  sm:mr-10">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M7 11.5V14m0-2.5v-6a1.5 1.5 0 113 0m-3 6a1.5 1.5 0 00-3 0v2a7.5 7.5 0 0015 0v-5a1.5 1.5 0 00-3 0m-6-3V11m0-5.5v-1a1.5 1.5 0 013 0v1m0 0V11m0-5.5a1.5 1.5 0 013 0v3m0 0V11" />
-          </svg>
-        </div>
-        <div class="flex-grow prose text-center sm:text-left sm:mt-0 prose-md text-gray-800">
-            <h2>I love to build things that help people</h2>
-        </div>
-    </div>
-    <div class="flex flex-col items-center pb-10 mx-auto max-w-7xl sm:flex-row">
-      <div class="inline-flex items-center justify-center flex-shrink-0 w-20 h-20 text-gray-800 rounded-full sm:mr-10">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-          <path d="M12 14l9-5-9-5-9 5 9 5z" />
-          <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
-        <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
-        </svg>
       </div>
-      <div class="flex-grow mt-6 prose text-center sm:text-left sm:mt-0 prose-md text-gray-800">
-          <h2>I believe you should never stop learning</h2>
-      </div>
-  </div>
-      
+      <p class="text-lg text-left text-slate-200 p-2 mb-8 leading-8 max-w-3xl">I'm a creative who is endlessly curious 🚀
+         I love to build things that help people 👩‍💻 
+         I believe you should never stop learning 🎓 and creamer > coffee</p>
+   
+  <button class=" max-w-3xl px-5 py-4 my-4 text-lg font-semibold text-center uppercase text-gray-800 bg-gradient-to-r bg-teal-500
+  lg:px-10 rounded-xl hover:bg-orange-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white">See my projects</button>
 
-  <button class=" px-5 py-4 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-rose-400 lg:px-10 rounded-xl hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">See my projects</button>
-
-  <div class="inline-flex items-center justify-center flex-shrink-0 w-70 h-30 my-20 text-gray-800 rounded-full sm:mr-10">
+  <div class="inline-flex items-center justify-center flex-shrink-0 w-70 h-30 my-20 text-teal-500 rounded-full sm:mr-10">
     <svg xmlns="http://www.w3.org/2000/svg" class="animate-bounce h-10 w-10  " fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" >
     <path stroke-linecap="round" stroke-linejoin="round" d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z" />
   </svg>
@@ -112,58 +101,35 @@
         <div>
           <div class="relative w-full max-w-lg">
             <div class="relative">
-              <img class="object-cover object-center mx-auto rounded-lg shadow-2xl" alt="hero" src="#">
+              <span class="mb-8 text-3xl font-bold tracking-tighter text-neutral-600 md:text-7xl lg:text-5xl"> My Skills</span>
+              <img class="object-cover object-center mx-auto rounded-lg" alt="hero" src="img/bio-pic.png">
             </div>
           </div>
         </div>
       </div>
-      <div class="flex flex-col items-start mt-12 mb-16 text-left lg:flex-grow lg:w-1/2 lg:pl-6 xl:pl-24 md:mb-0 xl:mt-0">
-        <span class="mb-8 text-xs font-bold tracking-widest text-teal-500 uppercase"> A little about me</span>
-        <h1 class="mb-8 text-4xl font-bold leading-none tracking-tighter text-neutral-600 md:text-7xl lg:text-5xl">Problem Solving Is My Superpower.</h1>
-        <p class="mb-8 text-base leading-relaxed text-left text-gray-500">Free and Premium themes, UI Kit's, templates and landing pages built with Tailwind CSS, HTML &amp; Next.js.</p>
+    
+      <div class="flex flex-row flex-wrap items-start mt-12 mb-16 text-left lg:flex-grow lg:w-1/2 lg:pl-6 xl:pl-24 md:mb-0 xl:mt-0">
+        <div class="p-1  mt-2 text-left space-x-1 space-y-2">
+          <button class="bg-teal-500 px-5 py-3 text-sm shadow-sm font-medium tracking-wider  text-white rounded-full hover:shadow-2xl hover:bg-rose-500">HTML5</button>
+          <button class="bg-teal-500 px-5 py-3 text-sm shadow-sm font-medium tracking-wider  text-white rounded-full hover:shadow-2xl hover:bg-rose-500">CSS3</button>
+          <button class="bg-teal-500 px-5 py-3 text-sm shadow-sm font-medium tracking-wider text-white rounded-full hover:shadow-2xl hover:bg-rose-500">JavaScript</button>
+          <button class="bg-teal-500 px-5 py-3 text-sm shadow-sm font-medium tracking-wider  text-white rounded-full hover:shadow-2xl hover:bg-rose-500">RWD</button>
+          <button class="bg-teal-500 px-5 py-3 text-sm shadow-sm font-medium tracking-wider text-white rounded-full hover:shadow-2xl hover:bg-rose-500">Git & Github</button>
+          <button class="bg-teal-500 px-5 py-3 text-sm shadow-sm font-medium tracking-wider  text-white rounded-full hover:shadow-2xl hover:bg-rose-500">Photoshop</button>
+          <button class="bg-teal-500 px-5 py-3 text-sm shadow-sm font-medium tracking-wider text-white rounded-full hover:shadow-2xl hover:bg-rose-500">VSCode</button>
+         
+        </div>
+        <h1 class="mb-8 mt-4 text-4xl font-bold leading-none tracking-tighter text-neutral-600 md:text-7xl lg:text-5xl">Problem Solving Is My Superpower.</h1>
+        <p class="mb-8 text-base leading-relaxed text-left text-gray-500">I'm a natural DIY-er and every do it yourself project starts out with a problem I am looking to solve. I started learning to code because my Dad 
+          needed a website for his business and I thought "I could probably do that". Little did I know learning to code would open up a whole new world of creative possibilities.
+          Needless to say, I was hooked!
+        </p>
         <div class="flex-col mt-0 lg:mt-6 max-w-7xl sm:flex">
           <dl class="grid grid-cols-1 gap-12 md:grid-cols-2">
             <div>
-              <dt class="inline-flex items-center justify-center flex-shrink-0 w-12 h-12 mb-5 text-blue-600 rounded-full bg-blue-50">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 icon icon-tabler icon-tabler-aperture" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                  <circle cx="12" cy="12" r="9"></circle>
-                  <line x1="3.6" y1="15" x2="14.15" y2="15"></line>
-                  <line x1="3.6" y1="15" x2="14.15" y2="15" transform="rotate(72 12 12)"></line>
-                  <line x1="3.6" y1="15" x2="14.15" y2="15" transform="rotate(144 12 12)"></line>
-                  <line x1="3.6" y1="15" x2="14.15" y2="15" transform="rotate(216 12 12)"></line>
-                  <line x1="3.6" y1="15" x2="14.15" y2="15" transform="rotate(288 12 12)"></line>
-                </svg>
-              </dt>
               <dd class="flex-grow">
-                <h2 class="mb-3 text-lg font-medium tracking-tighter text-neutral-600">Short title</h2>
-                <p class="text-base leading-relaxed text-gray-400">Explain 2 great feature here. Information about the feature.</p>
-                <a href="#" class="inline-flex items-center mt-6 font-semibold text-blue-500 md:mb-2 lg:mb-0 hover:text-neutral-600" title="read more">
-                  Learn More
-                  <svg class="w-4 h-4 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                    <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path>
-                  </svg>
-                </a>
-              </dd>
-            </div>
-            <div>
-              <dt class="inline-flex items-center justify-center flex-shrink-0 w-12 h-12 mb-5 text-blue-600 rounded-full bg-blue-50">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 icon icon-tabler icon-tabler-aperture" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                  <circle cx="12" cy="12" r="9"></circle>
-                  <line x1="3.6" y1="15" x2="14.15" y2="15"></line>
-                  <line x1="3.6" y1="15" x2="14.15" y2="15" transform="rotate(72 12 12)"></line>
-                  <line x1="3.6" y1="15" x2="14.15" y2="15" transform="rotate(144 12 12)"></line>
-                  <line x1="3.6" y1="15" x2="14.15" y2="15" transform="rotate(216 12 12)"></line>
-                  <line x1="3.6" y1="15" x2="14.15" y2="15" transform="rotate(288 12 12)"></line>
-                </svg>
-              </dt>
-              <dd class="flex-grow">
-                <h2 class="mb-3 text-lg font-medium tracking-tighter text-neutral-600">Short title</h2>
-                <p class="text-base leading-relaxed text-gray-400">Explain 2 great feature here. Information about the feature.</p>
-                <a href="#" class="inline-flex items-center mt-6 font-semibold text-blue-500 md:mb-2 lg:mb-0 hover:text-neutral-600" title="read more">
-                  Learn More
+                <a href="#" class="inline-flex items-center mt-6 font-semibold text-teal-500 md:mb-2 lg:mb-0 hover:text-orange-500" title="read more">
+                  Read my bio
                   <svg class="w-4 h-4 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
                     <path fill="none" d="M0 0h24v24H0z"></path>
                     <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path>
@@ -179,62 +145,113 @@
 </section>
 
 
-
 <!-- Project Section -->
 
 <section>
   <div class="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-24 max-w-7xl">
+    <h2 class="mb-8 mt-4 text-3xl font-bold leading-none tracking-tighter text-neutral-600 md:text-7xl lg:text-5xl">Projects</h2>
       <div class="grid w-full grid-cols-1 gap-6 mx-auto lg:grid-cols-3">
+       
           <div class="p-6">
-              <img class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl" src="img/unplugged-retreat.png" alt="blog">
+              <img class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl shadow-2xl hover:scale-105" src="img/unplugged-retreat.png" alt="blog">
 
               <h1 class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl">Unplugged Retreat</h1>
-              <p class="mx-auto text-base leading-relaxed text-gray-500">Free and Premium themes, UI Kit's, templates and landing pages built with Tailwind CSS, HTML &amp; Next.js.</p>
+              <p class="mx-auto text-base leading-relaxed text-gray-500">The Unplugged Retreat project is a multi-page website that was created mobile first and is fully responsive.
+                It features Google Map integration and custom code.</p>
 
               <div class="mt-4">
-                  <a href="#" class="inline-flex items-center mt-4 font-semibold text-blue-600 lg:mb-0 hover:text-neutral-600" title="read more"> Read More » </a>
+                  <a href="https://rae1821.github.io/unplugged-retreat" class="inline-flex items-center mt-4 font-semibold text-teal-500 lg:mb-0 hover:text-orange-500" title="read more"> See this project » </a>
               </div>
           </div>
           <div class="p-6">
-              <img class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl" src="img/github-repo-gallery.png" alt="blog">
+              <img class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl shadow-2xl hover:scale-105" src="img/github-repo-gallery.png" alt="blog">
 
               <h1 class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl">Github Repo Gallery</h1>
-              <p class="mx-auto text-base leading-relaxed text-gray-500">Free and Premium themes, UI Kit's, templates and landing pages built with Tailwind CSS, HTML &amp; Next.js.</p>
+              <p class="mx-auto text-base leading-relaxed text-gray-500">The GitHub Repo Gallery project fetches the data from the repos on my GitHub account using the GitHub API. The public repos from my account are then displayed on the page
+                allowing the user to get information about each repo, search for a particular repo, or view the repo on GitHub iteself.</p>
 
               <div class="mt-4">
-                  <a href="#" class="inline-flex items-center mt-4 font-semibold text-blue-600 lg:mb-0 hover:text-neutral-600" title="read more"> Read More » </a>
+                  <a href="https://rae1821.github.io/Github-repo-gallery/" class="inline-flex items-center mt-4 font-semibold text-teal-500 lg:mb-0 hover:text-orange-500" title="read more"> See this project » </a>
               </div>
           </div>
           <div class="p-6">
-              <img class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl" src="img/guess-the-word-game.png" alt="blog">
+              <img class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl shadow-2xl hover:scale-105" src="img/guess-the-word-game.png" alt="blog">
 
               <h1 class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl">Guess The Word Game</h1>
-              <p class="mx-auto text-base leading-relaxed text-gray-500">Free and Premium themes, UI Kit's, templates and landing pages built with Tailwind CSS, HTML &amp; Next.js.</p>
+              <p class="mx-auto text-base leading-relaxed text-gray-500">The Guess The Word game is a fun interactive game using custom code, JavaScript, and JSON files. Try to guess the word
+                before your guesses run out! Win or lose you can play as many times as you like. Good luck!</p>
 
               <div class="mt-4">
-                  <a href="#" class="inline-flex items-center mt-4 font-semibold text-blue-600 lg:mb-0 hover:text-neutral-600" title="read more"> Read More » </a>
+                  <a href="https://rae1821.github.io/guess-the-word/" class="inline-flex items-center mt-4 font-semibold text-teal-500 lg:mb-0 hover:text-orange-500" title="read more"> Play Guess the Word » </a>
               </div>
           </div>
+          <div class="p-6">
+            <img class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl shadow-2xl hover:scale-105" src="img/body-shape-calculator.png" alt="blog">
+
+            <h1 class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl">Body Shape Calculator</h1>
+            <p class="mx-auto text-base leading-relaxed text-gray-500">Wearing the right outfit has a huge impact on your confidence. But knowing what to wear can often be intimidating for some.
+              The #1 way to have better style is to first know your body shape. I created this simple body shape calculator to take the guess work out of knowing your shape. Just input your measurements and find out what your body shape is! </p>
+
+            <div class="mt-4">
+                <a href="https://rae1821.github.io/guess-the-word/" class="inline-flex items-center mt-4 font-semibold text-teal-500 lg:mb-0 hover:text-orange-500" title="read more"> Discover your body shape » </a>
+            </div>
+        </div>
       </div>
   </div>
 </section>
 
 
+<!-- Contact Section -->
+
+<section>
+  <div class="px-4 py-12 mx-auto max-w-7xl sm:px-6 md:px-12 lg:px-24 lg:py-24">
+    <div class="flex flex-wrap items-center mx-auto max-w-7xl">
+      <div class="w-full lg:max-w-lg lg:w-1/2 rounded-xl">
+        <div>
+          <div class="relative w-full max-w-lg">
+            <div class="relative">
+              <img class="object-cover object-center mx-auto rounded-lg w-1/2 " alt="hero" src="img/coffee.png">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col items-start mt-12 mb-16 text-left lg:flex-grow lg:w-1/2 lg:pl-6 xl:pl-24 md:mb-0 xl:mt-0">
+        <h1 class="mb-8 text-5xl font-bold leading-none tracking-tighter text-neutral-600 md:text-7xl lg:text-5xl">Let's connect</h1>
+        <a href="mailto:hello@rachelandersondooley.com" class="inline-flex items-center mt-2 text-xl font-semibold text-teal-500 lg:mb-0 hover:text-orange-500" title="read more">hello@rachelandersondooley.com </a>      
+        <div class="flex flex-wrap justify-center gap-2 mt-6">
+          <a href="https://www.twitter.com"><button class="bg-gray-900 hover:bg-teal-500 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded">
+            <svg class="w-5 h-5 fill-current" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" /></svg>
+          </button></a>
+      
+          <a href="https://www.linkedin.com">  <button class="bg-gray-900 hover:bg-teal-500 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded">
+            <svg class="w-5 h-5 fill-current" role="img" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+              <g><path d="M218.123122,218.127392 L180.191928,218.127392 L180.191928,158.724263 C180.191928,144.559023 179.939053,126.323993 160.463756,126.323993 C140.707926,126.323993 137.685284,141.757585 137.685284,157.692986 L137.685284,218.123441 L99.7540894,218.123441 L99.7540894,95.9665207 L136.168036,95.9665207 L136.168036,112.660562 L136.677736,112.660562 C144.102746,99.9650027 157.908637,92.3824528 172.605689,92.9280076 C211.050535,92.9280076 218.138927,118.216023 218.138927,151.114151 L218.123122,218.127392 Z M56.9550587,79.2685282 C44.7981969,79.2707099 34.9413443,69.4171797 34.9391618,57.260052 C34.93698,45.1029244 44.7902948,35.2458562 56.9471566,35.2436736 C69.1040185,35.2414916 78.9608713,45.0950217 78.963054,57.2521493 C78.9641017,63.090208 76.6459976,68.6895714 72.5186979,72.8184433 C68.3913982,76.9473153 62.7929898,79.26748 56.9550587,79.2685282 M75.9206558,218.127392 L37.94995,218.127392 L37.94995,95.9665207 L75.9206558,95.9665207 L75.9206558,218.127392 Z M237.033403,0.0182577091 L18.8895249,0.0182577091 C8.57959469,-0.0980923971 0.124827038,8.16056231 -0.001,18.4706066 L-0.001,237.524091 C0.120519052,247.839103 8.57460631,256.105934 18.8895249,255.9977 L237.033403,255.9977 C247.368728,256.125818 255.855922,247.859464 255.999,237.524091 L255.999,18.4548016 C255.851624,8.12438979 247.363742,-0.133792868 237.033403,0.000790807055"></path></g>
+            </svg>
+          </button></a>
+      
+          <a href="https://www.github.com"><button class="bg-gray-900 hover:bg-teal-500 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="w-5" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+              <g fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385c.6.105.825-.255.825-.57c0-.285-.015-1.23-.015-2.235c-3.015.555-3.795-.735-4.035-1.41c-.135-.345-.72-1.41-1.23-1.695c-.42-.225-1.02-.78-.015-.795c.945-.015 1.62.87 1.845 1.23c1.08 1.815 2.805 1.305 3.495.99c.105-.78.42-1.305.765-1.605c-2.67-.3-5.46-1.335-5.46-5.925c0-1.305.465-2.385 1.23-3.225c-.12-.3-.54-1.53.12-3.18c0 0 1.005-.315 3.3 1.23c.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23c.66 1.65.24 2.88.12 3.18c.765.84 1.23 1.905 1.23 3.225c0 4.605-2.805 5.625-5.475 5.925c.435.375.81 1.095.81 2.22c0 1.605-.015 2.895-.015 3.3c0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" fill="currentColor" /></g>
+            </svg>
+          </button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 <!-- Footer -->
-<footer class="bg-white" aria-labelledby="footer-heading">
-  <h2 id="footer-heading" class="sr-only">Footer</h2>
-
-  <div class="px-4 py-12 mx-auto bg-gray-50 max-w-7xl sm:px-6 lg:px-16">
-    <div class="flex flex-wrap items-baseline lg:justify-center">
-      <span class="mt-2 text-sm font-light text-gray-500">
-        Copyright © 2022
-        <a href="https://wickedlabs.dev" class="mx-2 text-wickedblue hover:text-gray-500" rel="noopener noreferrer">@wickedlabsHQ</a>. Since 2020
-      </span>
-    </div>
-  </div>
-</footer>
+    <footer class="bg-gray-900" aria-labelledby="footer-heading">
+      <h2 id="footer-heading" class="sr-only">Footer</h2>       
+        <div class="mt-8 p-8 md:mt-0 md:order-1">
+          <p class="text-center pb-6 text-sm text-white">
+            Copyright © 2022 Rachel Dooley
+          </p>
+        </div>
+      
+    </footer>
+    
 
 
 </body>
