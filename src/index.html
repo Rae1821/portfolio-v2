@@ -1,0 +1,241 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navigation -->
+  <div class=" w-full bg-teal-500">
+    <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl p-5 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+        <div class="flex flex-row items-center justify-between lg:justify-start">
+            <a href="./index.html" class="font-Sacramento text-2xl font-bold tracking-tighter text-rose-400 transition duration-500 ease-in-out transform tracking-relaxed lg:pr-8"> Rachel Dooley </a>
+            <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
+                <svg fill="currentColor" viewBox="0 0 20 20" class="w-8 h-8">
+                    <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                    <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" style="display: none"></path>
+                </svg>
+            </button>
+        </div>
+        <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow hidden md:flex md:justify-end md:flex-row">
+            <ul class="space-y-2 list-none lg:space-y-0 lg:items-center lg:inline-flex">
+                <li>
+                    <a href="#" class="px-2 lg:px-6 py-6 text-sm border-b-2 border-transparent hover:border-blue-600 leading-[22px] md:px-3 text-gray-500 hover:text-blue-500"> All <span class="hidden lg:inline"> templates </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="px-2 lg:px-6 py-6 text-sm border-b-2 border-transparent hover:border-blue-600 leading-[22px] md:px-3 text-gray-500 hover:text-blue-500"> FAQ </a>
+                </li>
+                <li>
+                    <a href="https://www.wickedtemplates.com/" class="px-2 lg:px-6 py-6 text-sm border-b-2 border-transparent hover:border-blue-600 leading-[22px] md:px-3 text-gray-500 hover:text-blue-500"> Free <span class="hidden lg:inline">Templates </span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<!-- Hero Area -->
+
+<section class="h-screen">
+  <div class="px-4 py-12 mx-auto  sm:px-6 md:px-12 lg:px-24 lg:py-24 bg-teal-500 h-full">
+    <div class="flex flex-col w-full mb-12 text-center h-full">
+      <div class="inline-flex items-center justify-center flex-shrink-0 w-20 h-20 mx-auto mb-5 text-rose-400 rounded-full ">
+      </div>
+      <h1 class="max-w-5xl text-4xl font-bold leading-none text-gray-800 md:text-5xl lg:text-6xl lg:max-w-7xl">
+        Hi, I'm Rachel ✨ <br class="hidden lg:block">
+        <h1 class="text-4xl font-bold text-gray-800 md:text-5xl lg:text-6xl lg:max-w-7xl py-3 ">Front-End Web Developer</h1>
+      </h1>
+      <div class="flex flex-col items-center pb-10 mx-auto my-5  max-w-7xl sm:flex-row">
+        <div class="inline-flex items-center justify-center flex-shrink-0 w-20 h-20 text-gray-800 rounded-full sm:mr-10">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z" clip-rule="evenodd" />
+            </svg>
+        </div>
+        <div class="flex-grow prose text-center sm:text-left sm:mt-0 prose-md text-gray-800">
+            <h2>I'm a creative who is endlessly curious</h2>
+        </div>
+    </div>
+    <div class="flex flex-col items-center pb-10 mx-auto  max-w-7xl sm:flex-row">
+        <div class="inline-flex items-center justify-center flex-shrink-0 w-20 h-20 text-gray-800rounded-full  sm:mr-10">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M7 11.5V14m0-2.5v-6a1.5 1.5 0 113 0m-3 6a1.5 1.5 0 00-3 0v2a7.5 7.5 0 0015 0v-5a1.5 1.5 0 00-3 0m-6-3V11m0-5.5v-1a1.5 1.5 0 013 0v1m0 0V11m0-5.5a1.5 1.5 0 013 0v3m0 0V11" />
+          </svg>
+        </div>
+        <div class="flex-grow prose text-center sm:text-left sm:mt-0 prose-md text-gray-800">
+            <h2>I love to build things that help people</h2>
+        </div>
+    </div>
+    <div class="flex flex-col items-center pb-10 mx-auto max-w-7xl sm:flex-row">
+      <div class="inline-flex items-center justify-center flex-shrink-0 w-20 h-20 text-gray-800 rounded-full sm:mr-10">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path d="M12 14l9-5-9-5-9 5 9 5z" />
+          <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+        </svg>
+      </div>
+      <div class="flex-grow mt-6 prose text-center sm:text-left sm:mt-0 prose-md text-gray-800">
+          <h2>I believe you should never stop learning</h2>
+      </div>
+  </div>
+      
+
+  <button class=" px-5 py-4 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-rose-400 lg:px-10 rounded-xl hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">See my projects</button>
+
+  <div class="inline-flex items-center justify-center flex-shrink-0 w-70 h-30 my-20 text-gray-800 rounded-full sm:mr-10">
+    <svg xmlns="http://www.w3.org/2000/svg" class="animate-bounce h-10 w-10  " fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" >
+    <path stroke-linecap="round" stroke-linejoin="round" d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z" />
+  </svg>
+</div>
+      
+ 
+      
+    
+  </div>
+</section>
+
+<section>
+
+  
+  </div>
+</section>
+
+
+
+<!-- About Blurb -->
+<section>
+  <div class="px-4 py-12 mx-auto max-w-7xl sm:px-6 md:px-12 lg:px-24 lg:py-24 ">
+    <div class="flex flex-wrap items-center mx-auto max-w-7xl">
+      <div class="w-full lg:max-w-lg lg:w-1/2 rounded-xl">
+        <div>
+          <div class="relative w-full max-w-lg">
+            <div class="relative">
+              <img class="object-cover object-center mx-auto rounded-lg shadow-2xl" alt="hero" src="#">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col items-start mt-12 mb-16 text-left lg:flex-grow lg:w-1/2 lg:pl-6 xl:pl-24 md:mb-0 xl:mt-0">
+        <span class="mb-8 text-xs font-bold tracking-widest text-teal-500 uppercase"> A little about me</span>
+        <h1 class="mb-8 text-4xl font-bold leading-none tracking-tighter text-neutral-600 md:text-7xl lg:text-5xl">Problem Solving Is My Superpower.</h1>
+        <p class="mb-8 text-base leading-relaxed text-left text-gray-500">Free and Premium themes, UI Kit's, templates and landing pages built with Tailwind CSS, HTML &amp; Next.js.</p>
+        <div class="flex-col mt-0 lg:mt-6 max-w-7xl sm:flex">
+          <dl class="grid grid-cols-1 gap-12 md:grid-cols-2">
+            <div>
+              <dt class="inline-flex items-center justify-center flex-shrink-0 w-12 h-12 mb-5 text-blue-600 rounded-full bg-blue-50">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 icon icon-tabler icon-tabler-aperture" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <circle cx="12" cy="12" r="9"></circle>
+                  <line x1="3.6" y1="15" x2="14.15" y2="15"></line>
+                  <line x1="3.6" y1="15" x2="14.15" y2="15" transform="rotate(72 12 12)"></line>
+                  <line x1="3.6" y1="15" x2="14.15" y2="15" transform="rotate(144 12 12)"></line>
+                  <line x1="3.6" y1="15" x2="14.15" y2="15" transform="rotate(216 12 12)"></line>
+                  <line x1="3.6" y1="15" x2="14.15" y2="15" transform="rotate(288 12 12)"></line>
+                </svg>
+              </dt>
+              <dd class="flex-grow">
+                <h2 class="mb-3 text-lg font-medium tracking-tighter text-neutral-600">Short title</h2>
+                <p class="text-base leading-relaxed text-gray-400">Explain 2 great feature here. Information about the feature.</p>
+                <a href="#" class="inline-flex items-center mt-6 font-semibold text-blue-500 md:mb-2 lg:mb-0 hover:text-neutral-600" title="read more">
+                  Learn More
+                  <svg class="w-4 h-4 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                    <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path>
+                  </svg>
+                </a>
+              </dd>
+            </div>
+            <div>
+              <dt class="inline-flex items-center justify-center flex-shrink-0 w-12 h-12 mb-5 text-blue-600 rounded-full bg-blue-50">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 icon icon-tabler icon-tabler-aperture" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <circle cx="12" cy="12" r="9"></circle>
+                  <line x1="3.6" y1="15" x2="14.15" y2="15"></line>
+                  <line x1="3.6" y1="15" x2="14.15" y2="15" transform="rotate(72 12 12)"></line>
+                  <line x1="3.6" y1="15" x2="14.15" y2="15" transform="rotate(144 12 12)"></line>
+                  <line x1="3.6" y1="15" x2="14.15" y2="15" transform="rotate(216 12 12)"></line>
+                  <line x1="3.6" y1="15" x2="14.15" y2="15" transform="rotate(288 12 12)"></line>
+                </svg>
+              </dt>
+              <dd class="flex-grow">
+                <h2 class="mb-3 text-lg font-medium tracking-tighter text-neutral-600">Short title</h2>
+                <p class="text-base leading-relaxed text-gray-400">Explain 2 great feature here. Information about the feature.</p>
+                <a href="#" class="inline-flex items-center mt-6 font-semibold text-blue-500 md:mb-2 lg:mb-0 hover:text-neutral-600" title="read more">
+                  Learn More
+                  <svg class="w-4 h-4 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                    <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path>
+                  </svg>
+                </a>
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Project Section -->
+
+<section>
+  <div class="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-24 max-w-7xl">
+      <div class="grid w-full grid-cols-1 gap-6 mx-auto lg:grid-cols-3">
+          <div class="p-6">
+              <img class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl" src="img/unplugged-retreat.png" alt="blog">
+
+              <h1 class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl">Unplugged Retreat</h1>
+              <p class="mx-auto text-base leading-relaxed text-gray-500">Free and Premium themes, UI Kit's, templates and landing pages built with Tailwind CSS, HTML &amp; Next.js.</p>
+
+              <div class="mt-4">
+                  <a href="#" class="inline-flex items-center mt-4 font-semibold text-blue-600 lg:mb-0 hover:text-neutral-600" title="read more"> Read More » </a>
+              </div>
+          </div>
+          <div class="p-6">
+              <img class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl" src="img/github-repo-gallery.png" alt="blog">
+
+              <h1 class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl">Github Repo Gallery</h1>
+              <p class="mx-auto text-base leading-relaxed text-gray-500">Free and Premium themes, UI Kit's, templates and landing pages built with Tailwind CSS, HTML &amp; Next.js.</p>
+
+              <div class="mt-4">
+                  <a href="#" class="inline-flex items-center mt-4 font-semibold text-blue-600 lg:mb-0 hover:text-neutral-600" title="read more"> Read More » </a>
+              </div>
+          </div>
+          <div class="p-6">
+              <img class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl" src="img/guess-the-word-game.png" alt="blog">
+
+              <h1 class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl">Guess The Word Game</h1>
+              <p class="mx-auto text-base leading-relaxed text-gray-500">Free and Premium themes, UI Kit's, templates and landing pages built with Tailwind CSS, HTML &amp; Next.js.</p>
+
+              <div class="mt-4">
+                  <a href="#" class="inline-flex items-center mt-4 font-semibold text-blue-600 lg:mb-0 hover:text-neutral-600" title="read more"> Read More » </a>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+
+<!-- Footer -->
+<footer class="bg-white" aria-labelledby="footer-heading">
+  <h2 id="footer-heading" class="sr-only">Footer</h2>
+
+  <div class="px-4 py-12 mx-auto bg-gray-50 max-w-7xl sm:px-6 lg:px-16">
+    <div class="flex flex-wrap items-baseline lg:justify-center">
+      <span class="mt-2 text-sm font-light text-gray-500">
+        Copyright © 2022
+        <a href="https://wickedlabs.dev" class="mx-2 text-wickedblue hover:text-gray-500" rel="noopener noreferrer">@wickedlabsHQ</a>. Since 2020
+      </span>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>
