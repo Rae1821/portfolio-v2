@@ -9,6 +9,6 @@
   "author": "Rachel",
   "license": "ISC",
   "devDependencies": {
-    "tailwindcss": "^3.0.24"
+    "tailwindcss": "^3.1.2"
   }
 }
