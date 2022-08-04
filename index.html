@@ -14,8 +14,6 @@
   <nav class="bg-gray-800 border-gray-200 px-2 sm:px-4 py-2.5">
     <div class="container flex flex-wrap justify-between items-center mx-auto">
       <img class="w-20 h-20 ml-4" src="./src/img/logo.png" alt="logo" />
-
-        <!--<span class="self-center text-xl font-BadScript whitespace-nowrap text-slate-100">Rachel Dooley</span>-->
       <button data-collapse-toggle="mobile-menu" type="button" class="mobile-btn inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu" aria-expanded="false">
         <span class="sr-only">Open main menu</span>
         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
@@ -24,7 +22,7 @@
       <div class="hidden w-full hover:text-teal-500 md:block md:w-auto" id="mobile-menu">
         <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-xl md:font-medium">
           <li>
-            <a href="src/about.html" class="block py-2 pr-4 pl-3 text-slate-100 border-b border-gray-100 hover:text-teal-500 md:hover:bg-transparent md:border-b-4 md:border-teal-500 md:hover:border-double md:hover:border-rose-500 md:hover:border-b-4 md:hover:text-slate-100 md:p-0 ">about</a>
+            <a href="#about" class="block py-2 pr-4 pl-3 text-slate-100 border-b border-gray-100 hover:text-teal-500 md:hover:bg-transparent md:border-b-4 md:border-teal-500 md:hover:border-double md:hover:border-rose-500 md:hover:border-b-4 md:hover:text-slate-100 md:p-0 ">about</a>
           </li>
           <li>
             <a href="#projects" class="block py-2 pr-4 pl-3 text-slate-100 border-b border-gray-100 hover:text-teal-500 md:hover:bg-transparent md:border-b-4 md:border-teal-500 md:hover:border-double md:hover:border-b-4 md:hover:border-rose-500 md:hover:text-slate-100 md:p-0">projects</a>
@@ -47,7 +45,7 @@
     <div class="px-4 py-12 mx-auto  sm:px-6 md:px-12 lg:px-24 lg:py-12 bg-gray-800 h-full">
       <div class="flex flex-col w-full mb-12 pb-12 text-center h-full">
           <h1 class="max-w-5xl text-5xl text-left mt-8 pl-2 text-slate-100 md:text-5xl lg:text-6xl lg:max-w-7xl">
-            Hi, I'm Rachel ✨<br class="block ">
+            Hi, I'm Rachel<br class="block ">
             <span class="relative">
               <span class="block absolute bg-teal-500"></span>
               <span class="relative text-white bg-gradient-to-b from-transparent via-transparent to-teal-500 text-4xl md:text-5xl lg:text-5xl lg:max-w-7xl">Front End Developer</span>
@@ -85,43 +83,36 @@
             <p class="text-lg text-left text-slate-200  py-2 mb-8 leading-8 max-w-2xl">I'm a creative who is endlessly curious 🚀
               I love to build things that help people 👩‍💻  &
               I believe you should never stop learning 🎓 </p>           
-            <button class="px-8 py-4 text-xl max-w-lg font-medium text-center uppercase text-gray-900  transition duration-500 ease-in-out transform bg-teal-500 lg:px-10 rounded-xl hover:bg-pink-600"><a href="src/projects.html">See My Projects</a></button>    
+            <button class="px-8 py-4 text-xl max-w-lg font-medium text-center uppercase text-gray-900  transition duration-500 ease-in-out transform bg-teal-500 lg:px-10 rounded-xl hover:bg-pink-600"><a href="#projects">See My Projects</a></button>    
       </div>
     </div>
   </section>
 
-  <!-- Scroll To Top Button -->
 
-  <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" class="hidden fixed p-3 bg-pink-600 text-white font-medium text-xs leading-tight uppercase animate-bounce rounded-full shadow-md hover:bg-teal-500 hover:shadow-lg focus:bg-teal-500 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-teal-500 active:shadow-lg transition duration-150 ease-in-out bottom-5 right-8" id="btn-back-to-top">
-    <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-4 h-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"></path></svg>
-  </button>
+ 
 
   <!-- About Section -->
   <section id="about">
-    <div class="px-4 flex flex-wrap py-12 mx-auto mt-8 max-w-7xl sm:px-6 md:px-12 lg:px-24 lg:py-24 ">
+    <div class="px-4 flex flex-wrap py-12 mx-auto mt-4 max-w-7xl sm:px-6 md:px-12 lg:px-24 lg:py-24 ">
+      <h2 class="mb-8 mt-4 text-4xl font-bold leading-none tracking-tighter mx-auto text-neutral-600 md:text-4xl lg:text-5xl text-center underline underline-offset-8 decoration-neutral-600">About</h2>
       <div class="flex flex-wrap items-center mx-auto max-w-7xl">
         <div class="w-full lg:max-w-lg lg:w-1/2 rounded-xl">
           <div>
             <div class="relative w-full max-w-lg">
               <div class="relative">
-                <span class="mb-8 text-3xl font-bold tracking-tighter text-neutral-600 md:text-7xl lg:text-5xl"> My Skills</span>
                 <img class="object-cover object-center mx-auto rounded-lg" alt="hero" src="src/img/circle-bio-pic.png">
               </div>
             </div>
           </div>
-        </div>
-    
-        <!-- Skills Section -->
-        <div class="flex flex-row flex-wrap items-start mt-12 mb-16 text-left lg:flex-grow lg:w-1/2 lg:pl-6 xl:pl-24 md:mb-0 xl:mt-0">
           <div class="p-1  mt-2 text-left space-x-1 space-y-2">
-            <button class="bg-teal-500 p-2 text-sm shadow-sm font-medium tracking-wider  text-white  rounded-lg  hover:shadow-2xl hover:bg-slate-100 hover:text-gray-900 hover:ring hover:ring-teal-500 ">HTML5</button>
-            <button class="bg-teal-500 p-2 text-sm shadow-sm font-medium tracking-wider  text-white rounded-lg hover:shadow-2xl hover:bg-slate-100 hover:text-gray-900 hover:ring hover:ring-teal-500 ">CSS3</button>
-            <button class="bg-teal-500 p-2 text-sm shadow-sm font-medium tracking-wider text-white rounded-lg hover:shadow-2xl hover:bg-slate-100 hover:text-gray-900 hover:ring hover:ring-teal-500 ">JavaScript</button>
-            <button class="bg-teal-500 p-2 text-sm shadow-sm font-medium tracking-wider  text-white rounded-lg hover:shadow-2xl hover:bg-slate-100 hover:text-gray-900 hover:ring hover:ring-teal-500 ">React</button>
-            <button class="bg-teal-500 p-2 text-sm shadow-sm font-medium tracking-wider  text-white rounded-lg hover:shadow-2xl hover:bg-slate-100 hover:text-gray-900 hover:ring hover:ring-teal-500 ">Responsive Design</button>
+            <button class="bg-teal-500 p-2 text-sm shadow-sm font-light  tracking-wider text-white  rounded-lg  hover:shadow-2xl hover:bg-slate-100 hover:text-gray-900 hover:ring hover:ring-teal-500 ">HTML5</button>
+            <button class="bg-teal-500 p-2 text-sm shadow-sm font-light tracking-wider text-white rounded-lg hover:shadow-2xl hover:bg-slate-100 hover:text-gray-900 hover:ring hover:ring-teal-500 ">CSS3</button>
+            <button class="bg-teal-500 p-2 text-sm shadow-sm font-light tracking-wider text-white rounded-lg hover:shadow-2xl hover:bg-slate-100 hover:text-gray-900 hover:ring hover:ring-teal-500 ">JavaScript</button>
+            <button class="bg-teal-500 p-2 text-sm shadow-sm font-medium tracking-wider text-white rounded-lg hover:shadow-2xl hover:bg-slate-100 hover:text-gray-900 hover:ring hover:ring-teal-500 ">React</button>
+            <button class="bg-teal-500 p-2 text-sm shadow-sm font-medium tracking-wider text-white rounded-lg hover:shadow-2xl hover:bg-slate-100 hover:text-gray-900 hover:ring hover:ring-teal-500 ">Responsive Design</button>
             <button class="bg-teal-500 p-2 text-sm shadow-sm font-medium tracking-wider text-white rounded-lg hover:shadow-2xl hover:bg-slate-100 hover:text-gray-900 hover:ring hover:ring-teal-500 ">Git + Github</button>
-            <button class="bg-teal-500 p-2 text-sm shadow-sm font-medium tracking-wider  text-white rounded-lg hover:shadow-2xl hover:bg-slate-100 hover:text-gray-900 hover:ring hover:ring-teal-500 ">Photoshop</button>
-            <button class="bg-teal-500 p-2 text-sm shadow-sm font-medium tracking-wider  text-white rounded-lg hover:shadow-2xl hover:bg-slate-100 hover:text-gray-900 hover:ring hover:ring-teal-500 ">Figma</button>
+            <button class="bg-teal-500 p-2 text-sm shadow-sm font-medium tracking-wider text-white rounded-lg hover:shadow-2xl hover:bg-slate-100 hover:text-gray-900 hover:ring hover:ring-teal-500 ">Photoshop</button>
+            <button class="bg-teal-500 p-2 text-sm shadow-sm font-medium tracking-wider text-white rounded-lg hover:shadow-2xl hover:bg-slate-100 hover:text-gray-900 hover:ring hover:ring-teal-500 ">Figma</button>
             <button class="bg-teal-500 p-2 text-sm shadow-sm font-medium tracking-wider text-white rounded-lg hover:shadow-2xl hover:bg-slate-100 hover:text-gray-900 hover:ring hover:ring-teal-500 ">VSCode</button>
             <button class="bg-teal-500 p-2 text-sm shadow-sm font-medium tracking-wider text-white rounded-lg hover:shadow-2xl hover:bg-slate-100 hover:text-gray-900 hover:ring hover:ring-teal-500 ">TailwindCSS</button>
             <button class="bg-teal-500 p-2 text-sm shadow-sm font-medium tracking-wider text-white rounded-lg hover:shadow-2xl hover:bg-slate-100 hover:text-gray-900 hover:ring hover:ring-teal-500 ">Bootstrap</button>
@@ -132,6 +123,11 @@
             <button class="bg-teal-500 p-2 text-sm shadow-sm font-medium tracking-wider text-white rounded-lg hover:shadow-2xl hover:bg-slate-100 hover:text-gray-900 hover:ring hover:ring-teal-500 ">VS Code</button>
             <button class="bg-teal-500 p-2 text-sm shadow-sm font-medium tracking-wider text-white rounded-lg hover:shadow-2xl hover:bg-slate-100 hover:text-gray-900 hover:ring hover:ring-teal-500 ">Npm</button>
           </div>
+        </div>
+
+      
+        <div class="flex flex-row flex-wrap items-start mt-12 mb-8 text-left lg:flex-grow lg:w-1/2 lg:pl-6 xl:pl-24 md:mb-0 xl:mt-0">
+        
           <h1 class="mb-8 mt-4 text-4xl font-bold leading-none tracking-tighter text-neutral-600 md:text-7xl lg:text-5xl">Problem Solving Is My Superpower.</h1>
             <p class="mb-8 text-base leading-relaxed text-left text-gray-500"> Hello! I'm Rachel, I'm a Front End Developer with deep roots in leadership, education,
               and customer service. I truly believe that everything is figureoutable and I won't give up until I find a solution to a problem. While taking a break from 
@@ -143,30 +139,20 @@
               come true.<br><br>
 
               When not at my computer, I enjoy designing & making my own clothes, hanging outside with my neighbors, playing superheros with my kiddo, or doing yoga with Waffles, our French Bulldog.<br><br>
-
-              <strong>Want to know more? Just click the button below!</strong>
             </p>
-            <a href="src/about.html" class="inline-flex items-center mt-6 font-semibold md:mb-2 lg:mb-0" title="read more">
-              <button class="bg-teal-500 flex flex-row px-10 py-3 text-sm shadow-sm font-medium tracking-wider text-white rounded-full hover:shadow-2xl hover:bg-slate-100 hover:text-slate-900 hover:ring-2  hover:ring-teal-500">Q & A with Rachel
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" />
-                </svg>
-            </button>
-            </a>
         </div>
       </div>
     </div>
   </section> <!-- end about section -->
 
-
   <!-- Project Section -->
   <section id="projects">
     <div class="relative items-center w-full px-5 pb-12 mx-auto md:px-12 lg:px-24 max-w-7xl">
-      <h2 class="mb-8 mt-4 text-3xl font-bold leading-none tracking-tighter text-neutral-600 md:text-7xl lg:text-5xl">Projects</h2>
-        <div class="grid w-full grid-cols-1 gap-6 mx-auto lg:grid-cols-3">
+      <h2 class="mb-8 mt-8 text-4xl font-bold leading-none tracking-tighter text-neutral-600 md:text-4xl lg:text-5xl text-center underline underline-offset-8 decoration-neutral-600">Projects</h2>
+        <div class="grid w-full grid-cols-1 gap-6 mx-auto md:grid-cols-2 lg:grid-cols-3">
             <!-- Project 1 -->
             <div class="p-6">
-              <a href="src/body-calculator.html"><img class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl shadow-2xl hover:scale-105" src="src/img/body-shape-calculator.png" alt="blog"></a>
+              <a href="src/body-calculator.html"><img class="object-cover object-center w-full mb-8 lg:h-48  rounded-xl shadow-2xl hover:scale-105" src="src/img/body-shape-calculator.png" alt="blog"></a>
 
               <h1 class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl">Body Shape Calculator</h1>
               <ol class="list-disc leading-loose text-gray-500 mb-4">
@@ -187,7 +173,7 @@
           
             <!-- Project 2 -->
             <div class="p-6">
-              <a href="src/github-repo-gallery.html"><img class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl shadow-2xl hover:scale-105" src="src/img/github-repo-gallery.png" alt="blog"></a>
+              <a href="src/github-repo-gallery.html"><img class="object-cover object-center w-full mb-8 lg:h-48 rounded-xl shadow-2xl hover:scale-105" src="src/img/github-repo-gallery.png" alt="blog"></a>
 
                 <h1 class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl">Github Repo Gallery</h1>
                 <ol class="list-disc leading-loose text-gray-500 mb-4">
@@ -208,7 +194,7 @@
 
             <!-- Project 3 -->
             <div class="p-6">
-              <a href="src/guess-the-word.html"><img class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl shadow-2xl hover:scale-105" src="src/img/guess-the-word-game.png" alt="blog"></a>
+              <a href="src/guess-the-word.html"><img class="object-cover object-center w-full mb-8 lg:h-48 rounded-xl shadow-2xl hover:scale-105" src="src/img/guess-the-word-game.png" alt="blog"></a>
 
                 <h1 class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl">Guess The Word Game</h1>
                 <ol class="list-disc leading-loose text-gray-500 mb-4">
@@ -229,7 +215,7 @@
 
             <!-- Project 4 -->
             <div class="p-6">
-              <a href="src/unplugged-retreat.html"><img class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl shadow-2xl hover:scale-105" src="src/img/unplugged-retreat.png"  alt="blog"></a>
+              <a href="src/unplugged-retreat.html"><img class="object-cover object-center w-full mb-8 lg:h-48 rounded-xl shadow-2xl hover:scale-105" src="src/img/unplugged-retreat.png"  alt="blog"></a>
 
               <h1 class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl">Unplugged Retreat</h1>
               <ol class="list-disc leading-loose text-gray-500 mb-4">
@@ -250,7 +236,7 @@
 
             <!-- Project 5 -->
             <div class="p-6">
-              <a href="src/rogue-pickings.html"><img class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl shadow-2xl hover:scale-105" src="src/img/rogue-pickings.png" alt="blog"></a>
+              <a href="src/rogue-pickings.html"><img class="object-cover object-center w-full mb-8 lg:h-48 rounded-xl shadow-2xl hover:scale-105" src="src/img/rogue-pickings.png" alt="blog"></a>
 
               <h1 class="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl">Rogue Pickings Website</h1>
               <ol class="list-disc leading-loose text-gray-500 mb-4">
@@ -276,7 +262,7 @@
   <!-- Connect Section -->
   <section class="bg-gray-800" id="contact">
     <div class="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-24 max-w-7xl">
-      <h2 class="mb-12 underline underline-offset-8 decoration-teal-500 mt-4 text-3xl font-bold leading-none text-center tracking-tighter text-slate-100 md:text-7xl lg:text-5xl">Contact</h2>
+      <h2 class="mb-12 underline underline-offset-8 decoration-teal-500 mt-4 text-3xl font-bold leading-none text-center tracking-tighter text-slate-100 md:text-4xl lg:text-5xl">Contact</h2>
       <div class="grid w-full grid-cols-1 gap-6 mx-auto md:grid-cols-2">
 
         <!-- Column 1 Paragraph-->
@@ -331,6 +317,12 @@
       </div>        
     </div>
   </section> <!-- end connect section -->
+
+   <!-- Scroll To Top Button -->
+
+   <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" class="hidden fixed p-3 bg-pink-600 text-white font-medium text-xs leading-tight uppercase animate-bounce rounded-full shadow-md hover:bg-teal-500 hover:shadow-lg focus:bg-teal-500 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-teal-500 active:shadow-lg transition duration-150 ease-in-out bottom-5 right-8" id="btn-back-to-top">
+    <svg aria-hidden="true"  data-prefix="fas" class="w-4 h-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"></path></svg>
+  </button>
 
   <!-- Footer -->
   <footer class="bg-gray-800 pt-12 pb-8 text-center">
